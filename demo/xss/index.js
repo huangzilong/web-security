@@ -4,13 +4,10 @@ var Router = require('koa-router');
 var app = new Koa();
 var router = new Router();
 
-router.get('/login', (ctx, next) => {
-  // ctx.router available
+router.get('/', (ctx, next) => {
   console.log(ctx.query)
-  ctx.body = '<script>alert("/xss/")</script>'
+  ctx.body = `<script>alert(/xss/)</script>`
 });
-
-router.get('/give_me_your_money') 
 
 app
   .use(router.routes())

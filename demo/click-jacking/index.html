@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<style type="text/css">
+  * {
+    margin: 0;
+    padding: 0;
+  }
+</style>
+</head>
+<body>
+<button id="button" onclick="camera()">打开你的摄像头</button>
+<script>
+function camera() {
+  alert('我要打开你摄像头了')
+  if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+        navigator.mediaDevices.getUserMedia({
+            video: true,
+            audio: true
+        }).then(function(stream) {
+            console.log(stream);
+
+            mediaStreamTrack = typeof stream.stop === 'function' ? stream : stream.getTracks()[1];
+
+            video.src = (window.URL || window.webkitURL).createObjectURL(stream);
+            video.play();
+        }).catch(function(err) {
+            console.log(err);
+        })
+} else if (navigator.getMedia) {
+        navigator.getMedia({
+            video: true
+        }, function(stream) {
+            mediaStreamTrack = stream.getTracks()[0];
+
+            video.src = (window.URL || window.webkitURL).createObjectURL(stream);
+            video.play();
+        }, function(err) {
+            console.log(err);
+        });
+    }
+}
+
+</script>
+</html>

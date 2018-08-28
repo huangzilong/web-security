@@ -35,6 +35,8 @@
 
 源代码是`<div><script>alert(/xxx/)</script></div>`
 
+[示例](../demo/xss)
+
 ### [示例二](https://hilongjw.github.io/xss-demo/#/)
 
 ## XSS 的类型
