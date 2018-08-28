@@ -41,7 +41,7 @@
 
 - 反射型XSS：把用户输入的数据直接反射给浏览器。一般情况下，需要诱导用户触发一个链接。
 - 存储型XSS：把用户输入的数据，存储在服务器中，每次用户访问该页面，都会执行这个脚本。比如，58同城发贴，填表单时，存入脚本文件，每个用户这个帖子时，就会执行这段代码。
-- DOM Based XSS：通过修改页面的DOM节点形成XSS。[demo](./demo/DOM-Based-XSS-a/index.html)
+- DOM Based XSS：通过修改页面的DOM节点形成XSS。[demo](../demo/DOM-Based-XSS-a/index.html)
 
 ## XSS Payload
 
@@ -149,7 +149,7 @@ fetch("/path", {
 
 ## CSS History Hack
 
-原理是利用style的visited属性，如果用户访问过这个网站，那链接的样式会有所不同。[隐私和visited伪类选择器](https://zhuanlan.zhihu.com/p/24122413) [demo](./demo/fishing/index.html)
+原理是利用style的visited属性，如果用户访问过这个网站，那链接的样式会有所不同。[隐私和visited伪类选择器](https://zhuanlan.zhihu.com/p/24122413) [demo](../demo/fishing/index.html)
 
 ## XSS Worm
 
