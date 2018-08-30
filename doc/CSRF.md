@@ -12,7 +12,7 @@
 
 比如，在该用户浏览器中打开`http://www.kezaihui.com/csrf.html`，这个页面包含一张 src 为`http://www.zaihuiba.com/operation/accounts/?phone=15689890989&spell=avada_kedavra`的图片，就可以达到目的。
 
-## CSRF原理理
+## CSRF原理
 
 ![csrf](http://static.huangzilong.com/static/csrf.png)
 
