@@ -140,7 +140,6 @@ console.timeEnd('b')
 
 我们设想一下网络中是否可以存在这样一个僵尸节点：用户在日常上网时打开一个正常的网页浏览，但在用户不知情的情况下，此网页的背后正在疯狂地向外发送大量的数据请求，此时攻击源实际上就是用户的浏览器。只要用户不关闭这个网页，数据请求就会一直发送。如果这样的僵尸节点存在，那么众多的此僵尸节点必然会构成僵尸网络。
 
-
 #### Web Worker
 
 Web Worker 是运行在后台的 Javascript，独立于其他脚本，不会影响页面的性能。下面简单列举一下Web Worker能够做什么。
@@ -154,6 +153,8 @@ Web Worker 是运行在后台的 Javascript，独立于其他脚本，不会影�
 4. 可以使用 setTimeout，clearTimeout，setInterval，clearInterval等方法；
 
 5. 可以使用XMLHttpRequest来发送请求，以及访问navigator的部分属性。
+
+[demo](../demo/corpse)
 
 ---
 

