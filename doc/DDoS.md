@@ -106,7 +106,7 @@ CC攻击的方式也有很多，在一些流量比较大的页面中，嵌入CC�
 
 对于一些异常接口，要求输入验证码
 
-*验证码*:（CAPTCHA）是“Completely Automated Public Turing test to tell Computers and Humans Apart”（全自动区分计算机和人类的图灵测试）的缩写，是一种区分用户是计算机还是人的公共全自动程序。
+**验证码**:（CAPTCHA）是“Completely Automated Public Turing test to tell Computers and Humans Apart”（全自动区分计算机和人类的图灵测试）的缩写，是一种区分用户是计算机还是人的公共全自动程序。
 
 ### slowloris攻击
 
