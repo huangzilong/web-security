@@ -2,6 +2,7 @@
 
 > DDOS 又称分布式拒绝服务，全称是 Distributed Denial of Service。其原理是利用合理请求，造成资源过载，导致服务不可用。
 
+
 > 我们可以将服务看作一个大型火车站，其轨道数量以及泊道的数量，直接影响了这座火车站的服务水平。轨道少了，火车进不了站，泊道少了，可以停泊的火车也少了。同一时段，如果有大量的火车进站，就会造成拥堵。
 
 ## 主要大型事件
@@ -11,7 +12,6 @@
 - 2016年10月，美国DNS服务商Dyn遭遇DDoS攻击，包括Twitter、Spotify、Airbnb、Visa等网站无法访问，大半个美国集体断网，媒体形容此次事件为“史上最严重DDoS攻击”。
 
 - 2018年9月，再惠网络短信接口受到不明来源的类DDOS攻击，导致服务异常。
-
 ## 攻击你的带宽(UDP flood)
 
 > UDP协议是一种无连接的服务，在UDP Flood 中，攻击者通常发送大量伪造源IP地址的小UDP包冲击DNS服务器或Radius认证服务器、流媒体视频服务器。100k bps的UDP Flood经常将线路上的骨干设备例如防火墙打瘫，造成整个网段的瘫痪。
@@ -30,8 +30,11 @@ NTP是标准的基于UDP协议传输的网络时间同步协议，由于UDP协�
 
 原理如下：
 
+<<<<<<< Updated upstream
 ![ddos1](http://static.huangzilong.com/static/ddos1.png )
 
+=======
+>>>>>>> Stashed changes
 1. 攻击者发送虚假的UDP请求；
 
 2. 伪造源IP地址：将请求包中的源IP地址替换成受害者的IP地址，这些请求包中通常不会出现攻击者自己的IP地址；
@@ -48,7 +51,11 @@ NTP是标准的基于UDP协议传输的网络时间同步协议，由于UDP协�
 
 TCP建立连接过程需要经过三次握手，在三次握手成功之后，建立连接，进而进行数据传输；假设有客户端和服务器，客户端向服务器发起连接请求：
 
+<<<<<<< Updated upstream
 ![](http://static.huangzilong.com/static/ddos2.png )
+=======
+![http://static.huangzilong.com/static/ddos2.png](ddos2)
+>>>>>>> Stashed changes
 
 1. 客户端向服务器发送SYN报文，包括客户端使用的端口号和初始序列号。
 
