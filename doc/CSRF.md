@@ -4,13 +4,13 @@
 
 ## 举例
 
-继续以删除账号的链接为例:
+以在线储值为例:
 
-`http://www.zaihuiba.com/operation/accounts/?phone=15689890989&spell=avada_kedavra`
+`http://www.zaihuiba.com/operation/accounts/?phone=17621350606&spell=mobiliarbus&business_id=338&one_piece_id=12060`
 
-当用户在`http://www.zaihuiba.com/`登录后，本地已经有了鉴定该用户身份的 cookie。此时只需要诱导用户在该浏览器打开第三方的网页，而该网页包含有删除该用户账号的 get 请求，便可达到 CSRF。
+当用户在`http://www.zaihuiba.com/`登录后，本地已经有了鉴定该用户身份的 cookie。此时只需要诱导用户在该浏览器打开第三方的网页，而该网页包含有用户账号的 get 请求，便可达到 CSRF。
 
-比如，在该用户浏览器中打开`http://www.kezaihui.com/csrf.html`，这个页面包含一张 src 为`http://www.zaihuiba.com/operation/accounts/?phone=15689890989&spell=avada_kedavra`的图片，就可以达到目的。
+比如，在该用户浏览器中打开`http://www.kezaihui.com/csrf.html`，这个页面包含一张 src 为`http://www.zaihuiba.com/operation/accounts/?phone=17621350606&spell=mobiliarbus&business_id=338&one_piece_id=12060`的图片，就可以达到目的。
 
 ## CSRF原理
 
