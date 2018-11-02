@@ -14,7 +14,7 @@
 
 ## CSRF原理
 
-![csrf](http://static.huangzilong.com/static/csrf.png)
+![csrf](../images/csrf.png)
 
 ## 浏览器有可能会拦截第三方Cookie
 

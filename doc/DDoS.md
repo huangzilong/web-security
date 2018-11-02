@@ -30,7 +30,7 @@ NTP是标准的基于UDP协议传输的网络时间同步协议，由于UDP协�
 
 原理如下：
 
-![ddos1](http://static.huangzilong.com/static/ddos1.png )
+![ddos1](../images/ddos1.png )
 
 1. 攻击者发送虚假的UDP请求；
 
@@ -48,7 +48,7 @@ NTP是标准的基于UDP协议传输的网络时间同步协议，由于UDP协�
 
 TCP建立连接过程需要经过三次握手，在三次握手成功之后，建立连接，进而进行数据传输；假设有客户端和服务器，客户端向服务器发起连接请求：
 
-![](http://static.huangzilong.com/static/ddos2.png )
+![](../images/ddos2.png )
 
 1. 客户端向服务器发送SYN报文，包括客户端使用的端口号和初始序列号。
 
